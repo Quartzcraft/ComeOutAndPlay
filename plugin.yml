@@ -1,0 +1,14 @@
+name: ComeOutAndPlay
+version: 1.0.0
+author: The QuartzCraft Team! mba2012, SoulPunisher & nfell2009
+website: http://quartzcraft.co.uk/
+main: uk.co.quartzcraft.coap.COAP
+
+   COAP.*:
+      description: Allows access to all COAP permissions.
+      default: op
+      children:
+         QCC.test: true
+   COAP.test:
+      description: Test permission.
+      default: op
