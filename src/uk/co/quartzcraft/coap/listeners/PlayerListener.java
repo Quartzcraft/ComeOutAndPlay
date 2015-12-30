@@ -31,5 +31,7 @@ public class PlayerListener implements Listener {
         player.setDisplayName(cPlayer.getRank().getStyleForName() + player.getDisplayName() + ChatColor.RESET);
         player.setPlayerListName(Util.removeExtraChars(player.getDisplayName(), 16));
 
+        String message = player.getDisplayName() + ChatColor.GREEN + " wants to play!";
+        join.setJoinMessage(message);
     }
 }
