@@ -2,6 +2,7 @@ package uk.co.quartzcraft.coap;
 
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+import uk.co.quartzcraft.coap.listeners.PlayerListener;
 import uk.co.quartzcraft.core.QuartzCore;
 import uk.co.quartzcraft.core.command.framework.QCommandFramework;
 import uk.co.quartzcraft.core.database.MySQL;
@@ -62,7 +63,7 @@ public class COAP extends JavaPlugin {
 
         //Listeners
         log.info("[COAP][STARTUP] Registering Listeners");
-
+        new PlayerListener(this);
 
         //Commands
         log.info("[COAP][STARTUP] Registering Commands");
