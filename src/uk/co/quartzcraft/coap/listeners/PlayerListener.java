@@ -27,5 +27,9 @@ public class PlayerListener implements Listener {
         Player player = join.getPlayer();
         CPlayer cPlayer = new CPlayer(player);
         UUID UUID = player.getUniqueId();
+
+        player.setDisplayName(cPlayer.getRank().getStyleForName() + player.getDisplayName() + ChatColor.RESET);
+        player.setPlayerListName(Util.removeExtraChars(player.getDisplayName(), 16));
+
     }
 }
